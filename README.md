@@ -27,3 +27,6 @@ To set a movie as watched by providing its index.
 * Connect the bot to a MongoDB instance putting your connection string in [`conf/credentials.py`](conf/credentials.py)  
 * Run the bot (either from your local machine, a cloud based VM instance like AWS EC or Google cloud Compute or from a VPS) using `python3 movbot.py`  
 * Call one of the command s to test it out  
+
+## Note:
+The bot uses an upvote and downvote emote for voting for movies. If your server already has emotes with those respective names, addd their respective IDs in [`conf/constants.py`](conf/constants.py). Otherwise you can add them from their respective PNG files: [`upvote.png`](upvote.png) and [`downvote.png`](downvote.png)  
