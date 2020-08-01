@@ -5,6 +5,7 @@ from math import ceil
 from conf.credentials import TOKEN
 from bot.commands import *
 from conf.pages import pages
+from conf.constants import *
 
 
 client = discord.Client()
@@ -77,9 +78,9 @@ async def on_message(message):
             for v in movies[:5]:
                 msg += """
                     `{}.` **[{}](https://imdb.com/find?q={})** | *`Added by {}`*
-                     > {}{}<:upvote:695448204040470568> {}<:downvote:695448203885019207> [**VOTE**](https://discordapp.com/channels/{}/{}/{})\n
+                     > {}{}<:upvote:{}}> {}<:downvote:{}}> [**VOTE**](https://discordapp.com/channels/{}/{}/{})\n
                      """.format(v.index, v.name, "+".join(v.name.split()), v.username,
-                                ':ballot_box_with_check: ' if v.watched else '', v.upvotes, v.downvotes, v.server_id, channel_id, v.message_id)
+                                ':ballot_box_with_check: ' if v.watched else '', v.upvotes, UPVOTE_ID, v.downvotes, DOWNVOTE_ID, v.server_id, channel_id, v.message_id)
 
             embed = discord.embeds.Embed(title="**List of movies**\n",
                                          description=msg,
