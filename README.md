@@ -29,4 +29,4 @@ To set a movie as watched by providing its index.
 * Call one of the command s to test it out  
 
 ## Note:
-The bot uses an upvote and downvote emote for voting for movies. If your server already has emotes with those respective names, addd their respective IDs in [`conf/constants.py`](conf/constants.py). Otherwise you can add them from their respective PNG files: [`upvote.png`](upvote.png) and [`downvote.png`](downvote.png)  
+The bot uses an upvote and downvote emote for voting for movies. If your server already has emotes with those respective names, addd their respective IDs in [`conf/constants.py`](conf/constants.py). Otherwise you can add them from their respective PNG files: [`upvote.png`](upvote.png) and [`downvote.png`](downvote.png), then add their IDs in [`conf/constants.py`](conf/constants.py)  
