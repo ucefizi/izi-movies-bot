@@ -20,5 +20,10 @@ To set a movie as watched.
 To set a movie as watched by providing its index.  
 
 ## How to use:
-To add this bot to your server, Click [here](https://discordapp.com/oauth2/authorize?client_id=701931133927161897&scope=bot) and choose which server you want to add it to and done.  
-You can use Discord roles to restrict it to specific channels.
+* Install dependencies `$ pip install -r requirements.txt`  
+* [Create a Discord Bot account](https://discordpy.readthedocs.io/en/latest/discord.html) 
+* Add bot to your server  
+* Add your bot token in [`conf/credentials.py`](conf/credentials.py)  
+* Connect the bot to a MongoDB instance putting your connection string in [`conf/credentials.py`](conf/credentials.py)  
+* Run the bot (either from your local machine, a cloud based VM instance like AWS EC or Google cloud Compute or from a VPS) using `python3 movbot.py`  
+* Call one of the command s to test it out  
