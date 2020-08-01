@@ -25,5 +25,5 @@ To set a movie as watched by providing its index.
 * Add bot to your server  
 * Add your bot token in [`conf/credentials.py`](conf/credentials.py)  
 * Connect the bot to a MongoDB instance putting your connection string in [`conf/credentials.py`](conf/credentials.py)  
-* Run the bot (either from your local machine, a cloud based VM instance like AWS EC or Google cloud Compute or from a VPS) using `python3 main.py`  
+* Run the bot (either from your local machine, a cloud based VM instance like AWS EC or Google cloud Compute or from a VPS) using `python3 movbot.py`  
 * Call one of the command s to test it out  
